@@ -1,0 +1,32 @@
+
+
+* {
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 1rem;
+    background-color: lightgray;
+    padding: 0.25rem 0.5rem;
+    margin: auto;
+}
+
+#input-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ascii-output {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 0.5;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 0.25rem;
+}
+
+canvas {
+    border: 1px solid;
+}

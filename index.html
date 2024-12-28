@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pixel to ASCII | JCLOH98</title>
+</head>
+<body>
+    <h1>Pixel to ASCII</h1>
+    <div id="pixel-input">
+        <div id="input-source">
+            <input title="upload" type="radio">upload image/video</input>
+            <button id="load-button">load</button>
+            <input title="camera" type="radio">use camera</input>
+
+            <!-- will show either image/video OR camera -->
+            <!-- <img id="input-source-media" src="/images/capybara-orange.png"></img> -->
+            <!-- <img id="input-source-media" src="/images/husky-shock.png"></img> -->
+            <!-- <img id="input-source-media" src="/images/kujo-jotaro.png"></img> -->
+            <!-- <img id="input-source-media" src="/images/kujo-jotaro-2.png"></img> -->
+            <div id="input-preview"></div>
+            <div id="gif-canvas"></div>
+        </div>
+
+        <div id="input-settings">
+            <div>
+                <input title="enable color" type="radio"></input>
+                <label>enable color</label>
+            </div>
+            <input title="scaling" type="range">scaling</input>
+            <!-- <input type="range">characters</input> -->
+            <button>update</button>
+        </div>
+    </div>
+
+    <div id="ascii-output">
+    </div>
+    <div id="canvases">
+        <canvas id="input-canvas"></canvas>
+        <canvas id="output-canvas"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gif-frames@1.0.1/dist/gif-frames.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
