@@ -4,43 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Pixel to ASCII | JCLOH98</title>
 </head>
 <body>
-    <h1>Pixel to ASCII</h1>
-    <div id="pixel-input">
-        <div id="input-source">
-            <input title="upload" type="radio">upload image/video</input>
-            <button id="load-button">load</button>
-            <input title="camera" type="radio">use camera</input>
-
-            <!-- will show either image/video OR camera -->
-            <!-- <img id="input-source-media" src="/images/capybara-orange.png"></img> -->
-            <!-- <img id="input-source-media" src="/images/husky-shock.png"></img> -->
-            <!-- <img id="input-source-media" src="/images/kujo-jotaro.png"></img> -->
-            <!-- <img id="input-source-media" src="/images/kujo-jotaro-2.png"></img> -->
-            <div id="input-preview"></div>
-            <div id="gif-canvas"></div>
-        </div>
-
-        <div id="input-settings">
-            <div>
-                <input title="enable color" type="radio"></input>
-                <label>enable color</label>
-            </div>
-            <input title="scaling" type="range">scaling</input>
-            <!-- <input type="range">characters</input> -->
-            <button>update</button>
-        </div>
+    <h1>Pixel to ASCII<span class="small"> by <a rel="noopener" target="_blank" href="https://jcloh-98.web.app/">JCLOH98</a></span></h1>
+    <div id="input-source">
+        <button id="load-button">upload</button>
+        <button id="camera-button">camera</button>
     </div>
 
-    <div id="ascii-output">
+    <div id="input-settings">
+        <!-- <div>
+            <input title="enable color" type="checkbox"></input>
+            <label>enable color</label>
+        </div> -->
+        <!-- <input title="scaling" type="range" value="100">scaling</input> -->
+        <!-- <button>update</button> -->
     </div>
+    
+    <div id="display">
+        <div id="input-preview"></div>
+        <div id="ascii-output"></div>
+    </div>
+
+    <!-- these are for debug use only -->
     <div id="canvases">
         <canvas id="input-canvas"></canvas>
         <canvas id="output-canvas"></canvas>
     </div>
-
+    <a id="support-this-project"rel="noopener" target="_blank" href="https://ko-fi.com/jcloh98">Support this project</a>
+    
+    <!-- https://www.jsdelivr.com/package/npm/gif-frames -->
     <script src="https://cdn.jsdelivr.net/npm/gif-frames@1.0.1/dist/gif-frames.min.js"></script>
     <script src="index.js"></script>
 </body>
